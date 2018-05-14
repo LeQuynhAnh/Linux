@@ -1,0 +1,2 @@
+test: testmymath.c
+gcc -o test testmymath.c

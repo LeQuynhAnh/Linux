@@ -1,0 +1,4 @@
+libmymath: mymath.o
+	ar crv libmymath.a mymath.o
+mymath.o: mymath.c
+gcc -c mymath.c

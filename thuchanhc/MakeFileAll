@@ -1,0 +1,8 @@
+all: testmymath.o libmymath.a
+	gcc -o all testmymath.o libmymath.a
+testmymath.o: testmymath.c
+	gcc -c testmymath.c
+libmymath.a: mymath.o
+	ar crv libmymath.a mymath.o
+mymath.o: mymath.c
+gcc -c mymath.c
